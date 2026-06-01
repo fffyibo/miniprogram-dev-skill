@@ -14,7 +14,7 @@
 ## 安装
 
 ```bash
-npx skills add fffyibo/miniprogram-dev-skill
+npx skills add fffyibo/miniprogram-dev-skill -g
 ```
 
 或手动安装：
