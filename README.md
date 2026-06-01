@@ -26,16 +26,21 @@ git clone https://github.com/fffyibo/miniprogram-dev-skill.git miniprogram-dev
 
 ## 兼容智能体
 
-本 skill 适用于以下 AI 智能体工具，安装后会自动识别：
+本 skill 基于 [skills.sh](https://skills.sh) 规范开发，支持 50+ 个 AI 智能体工具，安装时自动检测已安装的智能体。常用兼容列表：
 
-| 智能体 | 安装路径 | 说明 |
-|-------|---------|------|
-| **Claude Code** | `~/.claude/skills/miniprogram-dev` | Anthropic 官方 CLI 工具 |
-| **Codex** | `~/.codex/skills/miniprogram-dev` | OpenAI 代码智能体 |
-| **OpenClaw** | `~/.openclaw/skills/miniprogram-dev` | 开源智能体框架 |
-| **Hermes** | `~/.hermes/skills/miniprogram-dev` | 多模态智能体 |
+| 智能体 | `--agent` 参数 | 全局安装路径 |
+|-------|---------------|-------------|
+| **Claude Code** | `claude-code` | `~/.claude/skills/` |
+| **Codex** | `codex` | `~/.codex/skills/` |
+| **OpenClaw** | `openclaw` | `~/.openclaw/skills/` |
+| **Hermes Agent** | `hermes-agent` | `~/.hermes/skills/` |
+| **Cursor** | `cursor` | `~/.cursor/skills/` |
+| **Windsurf** | `windsurf` | `~/.codeium/windsurf/skills/` |
+| **GitHub Copilot** | `github-copilot` | `~/.copilot/skills/` |
+| **Gemini CLI** | `gemini-cli` | `~/.gemini/skills/` |
+| **Roo Code** | `roo` | `~/.roo/skills/` |
 
-> 其他支持 skills 规范的智能体也可使用，将 skill 目录放到对应路径即可。
+> 完整支持列表见 [skills 官方文档](https://github.com/vercel-labs/skills)。
 
 ## 使用
 
