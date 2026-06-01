@@ -14,7 +14,11 @@
 ## 安装
 
 ```bash
+# 全局安装（推荐，所有项目可用）
 npx skills add fffyibo/miniprogram-dev-skill -g
+
+# 项目级安装（仅当前项目可用）
+npx skills add fffyibo/miniprogram-dev-skill
 ```
 
 或手动安装：
