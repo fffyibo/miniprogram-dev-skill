@@ -14,19 +14,32 @@
 ## 安装
 
 ```bash
-npx skills add 你的用户名/miniprogram-dev-skill
+npx skills add fffyibo/miniprogram-dev-skill
 ```
 
 或手动安装：
 
 ```bash
 cd ~/.claude/skills/
-git clone https://github.com/你的用户名/miniprogram-dev-skill.git miniprogram-dev
+git clone https://github.com/fffyibo/miniprogram-dev-skill.git miniprogram-dev
 ```
+
+## 兼容智能体
+
+本 skill 适用于以下 AI 智能体工具，安装后会自动识别：
+
+| 智能体 | 安装路径 | 说明 |
+|-------|---------|------|
+| **Claude Code** | `~/.claude/skills/miniprogram-dev` | Anthropic 官方 CLI 工具 |
+| **Codex** | `~/.codex/skills/miniprogram-dev` | OpenAI 代码智能体 |
+| **OpenClaw** | `~/.openclaw/skills/miniprogram-dev` | 开源智能体框架 |
+| **Hermes** | `~/.hermes/skills/miniprogram-dev` | 多模态智能体 |
+
+> 其他支持 skills 规范的智能体也可使用，将 skill 目录放到对应路径即可。
 
 ## 使用
 
-在 Claude Code 中直接描述你的小程序需求即可自动触发：
+在智能体中直接描述你的小程序需求即可自动触发：
 
 ```
 我想做一个外卖点餐的微信小程序
@@ -50,6 +63,14 @@ miniprogram-dev/
     ├── env-setup.md          # 环境搭建指南
     └── publish-guide.md      # 上线发布指南
 ```
+
+## 关于本项目
+
+本 skill 目前仍在持续使用和测试调优中，会不断迭代改进。如果你在使用过程中遇到问题或有改进建议，欢迎：
+
+- 提交 [Issue](https://github.com/fffyibo/miniprogram-dev-skill/issues) 反馈 bug
+- 提交 [Pull Request](https://github.com/fffyibo/miniprogram-dev-skill/pulls) 贡献代码
+- 在 Discussions 中交流讨论
 
 ## 许可证
 
