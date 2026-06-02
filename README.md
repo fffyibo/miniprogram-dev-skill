@@ -3,6 +3,7 @@
 跨平台小程序全流程开发指导——从0到1上线自己的小程序。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![skills.sh](https://skills.sh/b/fffyibo/miniprogram-dev-skill)](https://skills.sh/fffyibo/miniprogram-dev-skill)
 
 ## 🌐 支持的平台
 
