@@ -14,6 +14,18 @@
 ![百度小程序](https://img.shields.io/badge/百度-2932E1?logo=baidu&logoColor=white)
 ![快手小程序](https://img.shields.io/badge/快手-FF4A4A?logo=kuaishou&logoColor=white)
 
+## 🤖 兼容的 AI 智能体
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-8A2BE2?logo=anthropic&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-000000?logo=cursor&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-0078D4?logo=openai&logoColor=white)
+![OpenClaw](https://img.shields.io/badge/OpenClaw-FF6600?logo=github&logoColor=white)
+![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-6A0DAD?logo=github&logoColor=white)
+![Windsurf](https://img.shields.io/badge/Windsurf-00A86B?logo=codeium&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?logo=githubcopilot&logoColor=white)
+![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-4285F4?logo=google&logoColor=white)
+![Roo Code](https://img.shields.io/badge/Roo_Code-FF6F00?logo=github&logoColor=white)
+
 
 ## 功能特性
 
