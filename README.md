@@ -5,13 +5,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![skills.sh](https://skills.sh/b/fffyibo/miniprogram-dev-skill)](https://skills.sh/fffyibo/miniprogram-dev-skill)
 
-**支持平台：**
-![微信小程序](https://img.shields.io/badge/微信小程序-07C160?style=flat&logo=wechat&logoColor=white)
-![支付宝小程序](https://img.shields.io/badge/支付宝小程序-1677FF?style=flat&logo=alipay&logoColor=white)
-![抖音小程序](https://img.shields.io/badge/抖音小程序-000000?style=flat&logo=tiktok&logoColor=white)
-![QQ小程序](https://img.shields.io/badge/QQ小程序-12B7F5?style=flat&logo=tencentqq&logoColor=white)
-![百度小程序](https://img.shields.io/badge/百度小程序-2319DC?style=flat&logo=baidu&logoColor=white)
-![快手小程序](https://img.shields.io/badge/快手小程序-FF4906?style=flat&logo=kuaishou&logoColor=white)
+## 🌐 支持的平台
+
+![微信小程序](https://img.shields.io/badge/微信-07C160?logo=wechat&logoColor=white)
+![QQ小程序](https://img.shields.io/badge/QQ-12B7F5?logo=tencentqq&logoColor=white)
+![抖音小程序](https://img.shields.io/badge/抖音-000000?logo=tiktok&logoColor=white)
+![支付宝小程序](https://img.shields.io/badge/支付宝-1677FF?logo=alipay&logoColor=white)
+![百度小程序](https://img.shields.io/badge/百度-2932E1?logo=baidu&logoColor=white)
+![快手小程序](https://img.shields.io/badge/快手-FF4A4A?logo=kuaishou&logoColor=white)
+
 
 ## 功能特性
 
