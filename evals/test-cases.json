@@ -1,0 +1,164 @@
+{
+  "name": "miniprogram-dev evals",
+  "description": "跨平台小程序开发技能测试用例",
+  "version": "1.0.0",
+  "testCases": [
+    {
+      "id": "basic-flow",
+      "name": "基础流程测试",
+      "description": "测试从需求到代码生成的完整流程",
+      "input": "我想做一个电影购票小程序，支持微信和支付宝",
+      "expectedBehavior": [
+        "询问目标平台（已提供：微信、支付宝）",
+        "询问核心功能（电影浏览、选座购票、订单管理等）",
+        "询问登录方式（微信登录、支付宝登录）",
+        "询问视觉风格",
+        "生成需求总结清单",
+        "等待确认后生成代码"
+      ],
+      "validation": {
+        "shouldAsk": ["核心功能", "登录方式", "视觉风格"],
+        "shouldNotAsk": ["目标平台（已提供）"],
+        "shouldGenerate": ["需求总结清单"]
+      }
+    },
+    {
+      "id": "auto-detect-features",
+      "name": "自动推断必备功能",
+      "description": "测试根据业务类型自动推断必备功能",
+      "input": "我想做一个外卖点餐小程序，只做微信平台",
+      "expectedBehavior": [
+        "自动识别为外卖类业务",
+        "自动确定必备功能：定位、地址管理、购物车、支付",
+        "在需求总结中标明自动确定的必备功能"
+      ],
+      "validation": {
+        "shouldInclude": ["定位", "地址管理", "购物车", "支付"],
+        "shouldMention": "根据业务类型自动确定"
+      }
+    },
+    {
+      "id": "flexible-questions",
+      "name": "灵活提问测试",
+      "description": "测试不重复询问已提供信息",
+      "input": "我要做一个社交小程序，主色调用蓝色，简洁风格，需要微信登录",
+      "expectedBehavior": [
+        "不再询问视觉风格（已提供：蓝色、简洁）",
+        "不再询问登录方式（已提供：微信登录）",
+        "询问其他必要信息（核心功能等）"
+      ],
+      "validation": {
+        "shouldNotAsk": ["视觉风格", "登录方式"],
+        "shouldAsk": ["核心功能"]
+      }
+    },
+    {
+      "id": "simple-app-skip-backend",
+      "name": "简单应用跳过后端",
+      "description": "测试简单应用自动跳过后端相关问题",
+      "input": "我想做一个计算器小程序，只做微信",
+      "expectedBehavior": [
+        "识别为工具类应用",
+        "判断为纯前端可解决",
+        "跳过后端相关问题",
+        "直接进入代码生成"
+      ],
+      "validation": {
+        "shouldNotAsk": ["后端技术", "数据库", "服务器"],
+        "shouldSkip": "后端方案讨论"
+      }
+    },
+    {
+      "id": "backend-admin-pages",
+      "name": "后端管理页面",
+      "description": "测试有后端时要求提供管理页面",
+      "input": "我要做一个电商小程序，需要后端，用 Node.js + MySQL",
+      "expectedBehavior": [
+        "确认后端技术栈",
+        "询问后端环境是否搭建好",
+        "在代码生成时包含管理后台页面"
+      ],
+      "validation": {
+        "shouldAsk": ["后端环境", "管理后台需求"],
+        "shouldGenerate": ["管理后台页面", "API 文档页面"]
+      }
+    },
+    {
+      "id": "login-business-correlation",
+      "name": "登录与业务关联",
+      "description": "测试根据业务场景判断登录时机",
+      "input": "我要做一个外卖小程序，需要微信登录",
+      "expectedBehavior": [
+        "确认微信登录可获取头像和昵称",
+        "询问哪些功能需要登录（如下单前必须登录）",
+        "询问用户信息是否需要持久化存储"
+      ],
+      "validation": {
+        "shouldAsk": ["登录与业务关联", "用户信息存储"],
+        "shouldExplain": "微信登录可获取头像和昵称"
+      }
+    },
+    {
+      "id": "no-make-up-info",
+      "name": "不编造信息",
+      "description": "测试遇到不确定信息时不瞎编",
+      "input": "快手小程序支持云开发吗？",
+      "expectedBehavior": [
+        "不直接给出肯定或否定答案",
+        "告知需要查阅官方文档确认",
+        "建议开发者访问快手小程序官方文档"
+      ],
+      "validation": {
+        "shouldNot": "直接给出确定答案",
+        "shouldSay": ["不确定", "需要确认", "查阅官方文档"]
+      }
+    },
+    {
+      "id": "page-count-accuracy",
+      "name": "页面数量准确",
+      "description": "测试页面数量与实际生成一致",
+      "input": "做一个电影购票小程序，需要首页、电影列表、电影详情、选座、订单列表、订单详情、个人中心、设置",
+      "expectedBehavior": [
+        "确认所有页面需求",
+        "需求总结中标明页面数量",
+        "生成的代码包含所有页面"
+      ],
+      "validation": {
+        "shouldCount": 8,
+        "shouldGenerate": ["首页", "电影列表", "电影详情", "选座", "订单列表", "订单详情", "个人中心", "设置"]
+      }
+    },
+    {
+      "id": "platform-differences",
+      "name": "平台差异处理",
+      "description": "测试正确处理各平台差异",
+      "input": "做一个支持微信和支付宝的小程序，需要登录和支付",
+      "expectedBehavior": [
+        "说明微信登录和支付宝登录的区别",
+        "说明微信支付和支付宝支付的区别",
+        "使用条件编译处理平台差异"
+      ],
+      "validation": {
+        "shouldExplain": ["微信登录获取 openid", "支付宝登录获取 user_id"],
+        "shouldUse": "条件编译"
+      }
+    },
+    {
+      "id": "confirm-before-code",
+      "name": "确认后再生成代码",
+      "description": "测试必须获得确认后才生成代码",
+      "input": "帮我做一个小程序",
+      "expectedBehavior": [
+        "询问目标平台",
+        "询问核心功能",
+        "询问视觉风格",
+        "生成需求总结清单",
+        "等待开发者确认后才开始生成代码"
+      ],
+      "validation": {
+        "shouldWait": "开发者确认",
+        "shouldNotGenerate": "未经确认直接生成代码"
+      }
+    }
+  ]
+}
