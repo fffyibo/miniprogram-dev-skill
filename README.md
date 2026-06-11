@@ -72,7 +72,7 @@ git clone https://github.com/fffyibo/miniprogram-dev-skill.git miniprogram-dev
 
 ## 使用
 
-在智能体中直接描述你的小程序需求即可自动触发：
+在智能体中使用 /miniprogram-dev 后直接描述你的小程序需求即可：
 
 ```
 我想做一个外卖点餐的微信小程序
@@ -80,12 +80,6 @@ git clone https://github.com/fffyibo/miniprogram-dev-skill.git miniprogram-dev
 
 ```
 帮我开发一个影院购票小程序
-```
-
-如果没有自动触发：
-
-```
-/miniprogram-dev
 ```
 
 ## 包含内容
